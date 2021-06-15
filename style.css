@@ -144,7 +144,8 @@ body {
 
 /* Very light scaling for our illustration */
 .illustration {
-  transform: translateX(160px)
+  transform: translateX(160px);
+  text-align: center
 }
 
 /* Instructions */
