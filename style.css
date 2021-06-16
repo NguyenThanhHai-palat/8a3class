@@ -89,7 +89,7 @@ a:not(.btn--remix):visited {
   padding: 0 1rem;
 }
 /******************************************************************************
-END Glitch hello-app default styles
+COPYRIGHTS GOOGLE
 ******************************************************************************/
 
 body {
@@ -170,6 +170,13 @@ input {
 h2 {
   color: #2800FF;
 }
+h1 {
+  color: #00CCCC;
+}
+h3 {
+  color: #000011;
+}
+
 
 /* Interactive image */
 .illustration:active {
