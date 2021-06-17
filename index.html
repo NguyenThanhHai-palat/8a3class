@@ -30,7 +30,7 @@
         <div id="downloadMe">TẢI NHẠC RenaiCirculation-KanaHanazawa_47xq7.mp3</div>
         <button onclick="download()">Download</button>
         <script type="text/javascript">
-              function saveAs(dataToDownload,filename) {
+              function save(dataToDownload,filename) {
 	var element = document.createElement('a');
 	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(dataToDownload));
 	element.setAttribute('download', filename);
@@ -42,7 +42,7 @@
         function download() {
 	    var text = document.getElementById('downloadMe').innerText;
 	    var file = 'RenaiCirculation-KanaHanazawa_47xq7.mp3';
-	    saveAs(text,file)
+	    save(text,file)
         }</script>
 
         <audio controls>
