@@ -32,7 +32,7 @@
         <script type="text/javascript">
               function save(dataToDownload,filename) {
 	var element = document.createElement('a');
-	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(dataToDownload));
+	element.setAttribute('href', 'data:mp3/plain;charset=utf-8,' + encodeURIComponent(dataToDownload));
 	element.setAttribute('download', filename);
 	element.style.display = 'none';
 	document.body.appendChild(element);
@@ -40,9 +40,9 @@
 	document.body.removeChild(element);
               }
         function download() {
-	    var text = document.getElementById('downloadMe').innerText;
+	    var mp3 = document.getElementById('downloadMe').innerMp3;
 	    var file = 'RenaiCirculation-KanaHanazawa_47xq7.mp3';
-	    save(text,file)
+	    save(mp3,file)
         }</script>
 
         <audio controls>
