@@ -113,6 +113,7 @@ body {
 
 /* Very light scaling for our illustration */
 
+.sitetax
 
 .text {
   color: #00FF33;
@@ -126,6 +127,7 @@ body {
 .title {
    color: #FF3333;
   font-family: HK Grotesk;
+  animation: mymove 5s infinite;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
