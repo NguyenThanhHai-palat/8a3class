@@ -29,7 +29,7 @@
     format("opentype");
 }
 @font-face {
-  font-family: Roboto;
+  font-family: RBT;
   font-weight: bold;
   src: url("https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2")
     format("opentype");
@@ -141,7 +141,7 @@ body {
   
 }
 p.thongbao {
-	  width: 100px;
+	  width: 100%;
 	  height: 50px;
 	  background: Gray;
 	  position: relative;
@@ -153,10 +153,10 @@ p.thongbao {
     margin: 0;
 	}
 .text2 {
-  color: #FF0000;
-  font-family: HK Grotesk1;
+  color: #FFFFFF;
+  font-family: RBT;
   font-style: normal;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 105%;
   margin: 0;
 }
