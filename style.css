@@ -28,6 +28,12 @@
   src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
 }
+@font-face {
+  font-family: Roboto;
+  font-weight: bold;
+  src: url("https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2")
+    format("opentype");
+}
 
 /* Our remix on glitch button */
 .btn--remix {
@@ -127,7 +133,6 @@ body {
 .title {
    color: #FF3333;
   font-family: HK Grotesk;
-  animation: mymove 5s infinite;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -135,6 +140,18 @@ body {
   margin: 0;
   
 }
+p.thongbao {
+	  width: 100px;
+	  height: 50px;
+	  background: Gray;
+	  position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 85%;
+    margin: 0;
+	}
 .text2 {
   color: #FF0000;
   font-family: HK Grotesk1;
