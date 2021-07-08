@@ -152,6 +152,17 @@ p.thongbao {
     line-height: 85%;
     margin: 0;
 	}
+div.backgthongbao {
+	width: 100%;
+	height: 500px;
+	background: LightSlateGray;
+	position: relative;
+    font-family: RBT;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 85%;
+    margin: 0;
+	}
 .text2 {
   color: #B22222;
   font-family: RBT;
