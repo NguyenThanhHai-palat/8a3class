@@ -191,16 +191,16 @@ div.tkbbrg {
     margin: 0;
    }
 a.linkwed {
-  background-color: #f44336;
+  background-color: #00fb7d7d;
   color: white;
-  padding: 15px 22px;
+  padding:;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: RBT;
     font-style: normal;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 85%;
     margin: 0;
 }
