@@ -190,6 +190,20 @@ div.tkbbrg {
     line-height: 85%;
     margin: 0;
    }
+a.linkwed {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: RBT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 85%;
+    margin: 0;
+}
 
 
 .illustration {
