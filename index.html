@@ -135,24 +135,6 @@
      </div>
      <div>
         <p class"text2"> Nhạc: 24kGoldn - Mood</p>
-        <div id="downloadMe">TẢI NHẠC 24kGoldn - Mood.mp3</div>
-        <button onclick="download()">Download (Đang thử nghiệm nên có khi đuôi không là mp3 mà là txt hoặc không tải được) </button>
-        <script type="text/javascript">
-              function save(dataToDownload,filename) {
-	var element = document.createElement('a');
-	element.setAttribute('href', 'data:mp3/plain;charset=utf-8,' + encodeURIComponent(dataToDownload));
-	element.setAttribute('download', filename);
-	element.style.display = 'none';
-	document.body.appendChild(element);
-	element.click();
-	document.body.removeChild(element);
-              }
-        function download() {
-	    var mp3 = document.getElementById('downloadMe').innerMp3;
-	    var file = '24kGoldn - Mood.mp3';
-	    save(mp3,file)
-        }</script>
-
         <audio controls>
         <source src="/24kGoldn - Mood.mp3" type="audio/mpeg">
       </audio>
