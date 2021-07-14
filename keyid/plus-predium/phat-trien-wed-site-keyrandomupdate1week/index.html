@@ -1,2 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CHÌA KHÓA NHÀ PHÁT TRIỂN</title>
+  <script>
+function PIN_KEY() {
+  var text;
+  var key = document.getElementById("Key-ID").value;
 
-PAGE NOT FOUND
+  switch(key) {
+    case "29550-17-P-mTEnD-P0":
+    text = "ĐÚNG MÃ KEY_PIN: ";
+    break;
+    case "54720-76-P-YlgmM-K4":
+    text = "ĐÚNG MÃ KEY_PIN: ";
+    break;
+    default:
+    text = "SAI MÃ KEY_PIN";
+  }
+  document.getElementById("KEY_PIN").innerHTML = text;
+}
+</script>
+  </head>
+<body>
+
+
+<input id="Key-ID" type="text">
+
+<button onclick="PIN_KEY()">Kiểm Tra</button>
+
+<p id="KEY_PIN"></p>
+<div>
+  </div>
+</body>
+</html>
