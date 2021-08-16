@@ -54,46 +54,6 @@
   white-space: nowrap;
   margin-left: auto;
 }
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
 /******************************************************************************
 COPYRIGHTS PALAT-NGTHHAI
 ******************************************************************************/
@@ -103,7 +63,6 @@ body {
   background-color: var(--color-bg);
 }
 
-/* Page structure */
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
@@ -117,7 +76,7 @@ body {
   justify-content: center;
 }
 
-/* Very light scaling for our illustration */
+
 
 .sitetax
 
@@ -224,7 +183,6 @@ input {
   transition: 500ms;
 }
 
-/* Subheading */
 h2 {
   color: #2800FF;
 }
@@ -233,16 +191,4 @@ h1 {
 }
 h3 {
   color: #000011;
-}
-
-
-
-.illustration:active {
-  transform: translateY(5px);
-}
-
-
-
-.rotated {
-  transform: rotate(360deg);
 }
