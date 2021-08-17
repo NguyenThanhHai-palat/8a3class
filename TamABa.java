@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class 8a3thsp.cf-Protect-simple.java {
+public class TamABa.java {
     public static void main(String[] args) {
     
     JFrame fillscreen = new JFrame();
