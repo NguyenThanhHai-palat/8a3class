@@ -26,6 +26,9 @@ public class TamABa.java {
     fillscreen.setSize(500, 500);
     fillscreen.setLayout(null);
     fillscreen.setVisible(true);
-
+    System.out.println(".NET");
+    System.out.println("list:1.ID 2.USER 3.CDS");
+   	System.out.println("8a3thsp.cf/freenom");
+    System.out.println("2021-2022");
     }
 }
