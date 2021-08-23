@@ -1,43 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <style>
-        body{
-            background-image: url("https://images.unsplash.com/photo-1616235132417-99f443954d2e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
-            background-size: cover;
-            font-family: 'Roboto', 'sans-serif';
-        }
-        main{
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .header404{
-            font-family: 'Chango', cursive;
-            font-size: 48px;
-        }
-        .content404{
-            text-align: center;
-        }
+    <title>Trang Tìm Thấy Trang</title>
+	<link rel="stylesheet" href="/style.css"/>
+    <style>HTML,BODY{cursor: url("http://8a3thsp.cf/data/8a3_thsp.mouse.cur"), url("http://mangvn.org/2005/anh/chuot/chuthap.cur"), auto;}</style>
+      <link rel="shortcut icon" href="/logo.png">
+   style>
+    p.colorjeb {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      animation-name: color;
+      animation-duration: 100s;
+    }
+    @keyframes color {
+      0%   {background-color: red;}
+      10%  {background-color: yellow;}
+      20%  {background-color: blue;}
+      30%  {background-color: orange;}
+      40%  {background-color: green;}
+      50%  {background-color: pink;}
+      60%  {background-color: aqua;}
+      70%  {background-color: gray;}
+      80%  {background-color: Indigo;}
+      90%  {background-color: lime;}
+      100% {background-color: yellowGreen;}
+    }
     </style>
-</head>
-<body>
-    <main>
-        <h4 class="header404">404</h4>
-        <div class="content-404">
-            Uh-oh! We couldn't find the page you are looking for.
-        </div>
-        <p>
-            <a href="/">Check our home page</a>
-        </p>
-    </main>
+   <style>
+ul.baru {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li.bw a:hover {
+  background-color: #111;
+  }
+  a.b{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+</style>
+ </head>
+  <body>
+      <main>
+    <div class="date">
+   <div style="text-align: right"> <span id="gio">12</span><span> giờ </span><span id="phut">20</span><span>phút</span>  </div>
+   <div style="text-align: right"> <span id="thu">Chủ Nhật,</span>
+    <span> ngày <span id="ngay">15</span>
+    <span> tháng </span><span id="thang">Tám</span>
+    <span> năm </span><span id="nam">2021</span></span></div>
+  <script>
+     var gio = new Date().getHours();
+     document.getElementById("gio").innerHTML = gio;
+
+  </script>
+  <script>
+    var phut = new Date().getMinutes()
+     document.getElementById("phut").innerHTML = phut;
+  </script>
+     <style>
+div.chude1{  
+  background: url("https://8a3thsp.cf/data/pic-baw-cv19.png");
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 100px;
+
+}
+</style>
+<style>
+div.chude2{  
+  background: url("https://8a3thsp.cf/data/pic-baw-cv19-bh.png");
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 100px;
+
+}
+</style>
+  <script>
+     var d = new Date();
+     var thu = new Array(7);
+    thu[0] = "Chủ Nhật,";
+    thu[1] = "Thứ Hai,";
+    thu[2] = "Thứ Ba,";
+    thu[3] = "Thứ Tư,";
+    thu[4] = "Thứ Năm,";
+    thu[5] = "Thứ Sáu,";
+    thu[6] = "Thứ Bảy,";
+
+  var n = thu[d.getDay()];
+  document.getElementById("thu").innerHTML = n;
+    </script>
+    <script>
+      var ngay = new Date().getDate();
+      document.getElementById("ngay").innerHTML = ngay;
+</script>
+
+  <script>
+  var thang = new Array();
+  thang[0] = "Một";
+  thang[1] = "Hai";
+  thang[2] = "Ba";
+  thang[3] = "Tư";
+  thang[4] = "Năm";
+  thang[5] = "Sáu";
+  thang[6] = "Bảy";
+  thang[7] = "Tám";
+  thang[8] = "Chín";
+  thang[9] = "Mười";
+  thang[10] = "Mười Một";
+  thang[11] = "Mười Hai";
+  var d = new Date();
+  var n = thang[d.getMonth()];
+  document.getElementById("thang").innerHTML = n;
+  
+  </script>
+  <script>
+    var nam = new Date().getFullYear();
+     document.getElementById("nam").innerHTML = nam;
+
+     document.cookie = "registered_copyright_system_daydate_time";
+    </script>
+  
+</div>
+     <img src="/headdate7821.png" 100%="" title="LỚP 8A3 TRƯỜNG PHỔ THÔNG THỰC HÀNH SƯ PHẠM" width="100%; height=">
+     <div>
+     <script>
+    function onFunction() {
+      alert ("Đã kết nối!");
+    }
+
+    function offFunction() {
+      alert ("Mất kết nối với máy chủ");
+    }
+</script>
+       </div>
+
+<ul class="baru">
+  <li class="bw"><a class="b" href="https://8a3thsp.cf/">Trang Chủ </a></li>
+  <li class="bw"><a class="b" href="https://8a3thsp.cf/nhomphattrienweb.html">Nhóm Phát Triển </a></li>
+  <li class="bw"><a class="b" href="https://8a3thsp.cf/thoikhoabieu">Thời Khóa Biểu</a></li>
+  <li class="bw"><a class="b" href="https://8a3thsp.cf/publicdata/">Xem Dữ Liệu Trang Web</a></li>
+  <li class="bw"><a class="b" href="https://blog.8a3thsp.cf/">Xem Bài Viết</a></li>
+</ul>
+<hr>
     
+          <h1> LỖI 404: KHÔNG TÌM THẤY TRANG</h1>
+    </main>
+    <div style="text-align: center"><span class="text">©P-NgThHai </span><span class="text2">2021</span></div>
 </body>
 </html>
