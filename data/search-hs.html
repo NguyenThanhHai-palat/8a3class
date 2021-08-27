@@ -1,1 +1,45 @@
-
+<title>Search</title>
+<script src="https://api.8a3thsp.cf/data/inpuths.js"></script>
+<style>
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a.bc {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+#myUL li a.bc:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+<input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+<ul id="myUL">
+  <li><a class="bc" href="#">Nguyễn Tấn Bình An</a></li>
+  <li><a class="bc" href="#">Chí Thái Tâm Anh</a></li>
+  <li><a class="bc" href="#">Phạm Bùi Đức Anh</a></li>
+  <li><a class="bc" href="#">Bùi Trần Gia Bảo</a></li>
+  <li><a class="bc" href="#">Trương Văn Công</a></li>
+  <li><a class="bc" href="#">Nguyễn Thành Đạt (10/5)</a></li>
+  <li><a class="bc" href="#">Nguyễn Thành Đạt (16/2)</a></li>
+  <li><a class="bc" href="#">Nguyễn Thanh Hải</a></li>
+  <li><a class="bc" href="#">Dương Nhật Hằng</a></li>
+  <li><a class="bc" href="#">Huỳnh Vũ Ngọc Hân</a></li>
+</ul>
