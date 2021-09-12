@@ -15,7 +15,60 @@
   <link
   href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet"/>
   <link type="image/x-icon" href="https://scontent-sin6-3.xx.fbcdn.net/v/t1.18169-9/14956442_1049350135188157_1409366944347793961_n.jpg?_nc_cat=110&amp;ccb=1-3&amp;_nc_sid=09cbfe&amp;_nc_ohc=p8KAQO-zonoAX_CMlY-&amp;_nc_ht=scontent-sin6-3.xx&amp;oh=7680fe43deb8d30b838ae4a24ad6b5d8&amp;oe=60D4B7A4">
-  
+  <style>
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.popupcontent {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatet;
+  animation-duration: 0.7s
+}
+@-webkit-keyframes animatet {
+  from {top:-800px; opacity:0} 
+  to {top:100; opacity:1}
+}
+@keyframes animatet {
+  from {top:-700px; opacity:0.5}
+  to {top:0; opacity:1}
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.headpopup {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.bodypopup {padding: 2px 45px;}
+</style>
  </head>
   <body>
       <h2>TRANG NÀY VỚI MỤC ĐÍCH CÁC TÍNH NĂNG WEB CHƯA ĐƯỢC THÊM</h2>
@@ -54,7 +107,36 @@
 <p id="vertd"></p>
 <p id="nentan"></p>
           <hr>
-   
+   <button id="myBtn">Thông tin</button>
+<div id="myModal" class="modal">
+  <div class="popupcontent">
+    <div class="headpopup">
+      <span class="close">&times;</span>
+      <h2>Thông Báo</h2>
+    </div>
+    <div class="bodypopup">
+      <p>Đây chỉ là trang thử code thôi chứ không có dán vào web chính đâu</p>
+    </div>
+  </div>
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+var inputpopup = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+inputpopup.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == popup) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
        <div style="text-align: center"><span class="text">©P-NgThHai </span><span class="text2">2021</span></div>
 
 </div></body></html>
