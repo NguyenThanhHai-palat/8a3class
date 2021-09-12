@@ -74,7 +74,7 @@ li.bw a:hover {
 }
 </style>
   </head>
- <body onload="checkCookie()">
+ <body>
    <script>
     function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -97,7 +97,7 @@ li.bw a:hover {
     }
     return "";
 }
-    function checkCookie() {
+
     var username = getCookie("username");
     if (username != "") {
         alert("Welcome again " + username);
@@ -107,7 +107,7 @@ li.bw a:hover {
             setCookie("username", username, 365);
         }
     }
-}
+
   </script>
     <div class="date">
    <div style="text-align: right"> <span id="gio">12</span><span> giờ </span><span id="phut">20</span><span>phút</span>  </div>
