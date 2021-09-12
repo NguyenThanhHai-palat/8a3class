@@ -1,4 +1,4 @@
-<html lang="VN">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,7 +72,7 @@ li.bw a:hover {
   float: left;
 }
 </style>
-    <script>
+ <script>
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -103,7 +103,7 @@ function checkCookie() {
   } else {
      user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web:","");
      if (user != "" && user != null) {
-       setCookie("username-part", user, 40);
+       setCookie("username-part", user, 30);
      }
   }
 }
