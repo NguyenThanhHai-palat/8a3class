@@ -213,7 +213,30 @@ a.hqe:hover, a.hqe:active {
   <li class="bw"><a class="b" href="https://sport.8a3thsp.cf/">Thể Thao</a></li>
 </ul>
   <div>
-  <p id="go"></p><p id="timego"></p>
+  <p id="go"></p>
+   <script>
+     var user = getnameC("username-part");
+ if (user != "") {
+    alert("Chào Mừng trở lại!, " + user);
+  } else {
+     user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
+     if (user != "" && user != null) {
+       setupC("username-part", user, 40);
+     }
+  }
+  var time = new Date().getHours();
+    document.getElementById("go").innerHTML =
+    "Chào " + user + "! Chúc bạn 1 ngày tốt"; 
+   if (time < 10) {
+    greeting = "Chào buổi sáng! " + user ;
+  } else if (time < 18) {
+    greeting = "Chúc 1 ngày vui vẻ " + user ;
+  } else {
+    greeting ="Chào buổi tối! " + user ;    
+  }
+  document.getElementById("timego").innerHTML = greeting;
+   </script>
+  </div>
 <hr>
     
 <div>
