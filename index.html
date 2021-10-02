@@ -185,12 +185,15 @@ li.bw a:hover {
   <li class="bw"><a class="b" href="https://sport.8a3thsp.cf/">Thể Thao</a></li>
 </ul>
   
-<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
-</fb:login-button>
+
   <marquee onmouseover="this.stop();" onmouseout="this.start();"><b style="color:red;">Thông Báo:</b>Tuân thủ thông điệp 5K và 5T |   <b style="color:red;">QUẢNG CÁO:</b>ai chưa hiểu bài Toán hay Hóa đến với kênh <a href="https://www.youtube.com/channel/UCvclE98tzIK1SiIp8vYa2ew">THẦY QUANG</a> nhé!</marquee>
   <div>
+   fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
   <p id="go"></p>
    <script>
      var user = getnameC("username-part");
