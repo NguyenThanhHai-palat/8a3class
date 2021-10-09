@@ -16,6 +16,12 @@
   display: none !important;
 }
 
+{
+  .url {cursor: url(http://8a3thsp.cf/data/openurl.cur),auto;}
+  .pointer {cursor: url(http://8a3thsp.cf/data/openurl.cur),auto;}
+   BODY {cursor: url("http://8a3thsp.cf/data/8a3_thsp.mouse.cur"), auto}
+}
+
 /*font*/
 @font-face {
   font-family: HK Grotesk1;
