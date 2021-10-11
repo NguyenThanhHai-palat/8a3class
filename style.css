@@ -24,6 +24,11 @@
 
 /*font*/
 @font-face {
+  font-family: CORBEL;
+  src: url("/font/CORBEL.TTF")
+    format("opentype");
+}
+@font-face {
   font-family: HK Grotesk1;
   src: url("/achenb.otf")
     format("opentype");
@@ -187,6 +192,14 @@ input {
   border-radius: 4px;
   padding: 0.5rem 1rem;
   transition: 500ms;
+}
+p.copyrighthead
+{
+font-family: CORBEL;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 85%;
+    margin: 0;
 }
 
 h2 {
