@@ -1,0 +1,61 @@
+@font-face {
+  font-family: CORBEL;
+  src: url("/font/CORBEL.TTF")
+    format("opentype");
+}
+@font-face {
+  font-family: ACHENB;
+  src: url("/achenb.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+@font-face {
+  font-family: RBT;
+  font-weight: bold;
+  src: url("https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2")
+    format("opentype");
+}
+.text {
+  color: #00FF33;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 105%;
+  margin: 0;
+}
+
+
+
+.title {
+   color: #FF3333;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 85%;
+  margin: 0;
+  
+}
+.text2 {
+  color: #B22222;
+  font-family: RBT;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 105%;
+  margin: 0;
+}
+h2 {
+  color: #2800FF;
+}
+h1 {
+  color: #00CCCC;
+}
+h3 {
+  color: #000011;
+}
