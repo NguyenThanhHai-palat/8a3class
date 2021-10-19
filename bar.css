@@ -1,0 +1,70 @@
+
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+@font-face {
+  font-family: RBT;
+  font-weight: bold;
+  src: url("https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2")
+    format("opentype");
+}
+
+               /* BAR WEB INSIDE*/
+ul.bar-web {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li.bar-u a:hover {
+  background-color: #111;
+  }
+  a.bar-link{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+
+                /* THONG BAO */
+p.thongbao {
+	width: 100%;
+	height: 50px;
+	background: Gray;
+	position: relative;
+    font-family: RBT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 85%;
+    margin: 0;
+	}
+div.backgthongbao {
+	width: 100%;
+	height: 500px;
+	background: LightSlateGray;
+	position: relative;
+    font-family: RBT;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 85%;
+    margin: 0;
+	}
+div.tkbbrg {
+  width: 100%;
+  height: 500px;
+  background:rgba(0, 233, 202, 0.514);
+  position: relative;
+    font-family: RBT;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 85%;
+    margin: 0;
+   }
