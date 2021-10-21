@@ -201,6 +201,13 @@ font-family: CORBEL;
     line-height: 85%;
     margin: 0;
 }
+p {
+  font-family: RBT;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 105%;
+  margin: 0;
+}
 
 h2 {
   color: #2800FF;
