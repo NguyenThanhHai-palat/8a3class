@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://8a3thsp.cf/style.css"/>
+ <link rel="stylesheet" href="https://8a3thsp.cf/slide.css"/>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="WebSlides fade">
+  <div class="numbertext">PIC 1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">WELCOME TO 8A3 CLASS</div>
+</div>
+
+<div class="WebSlides fade">
+  <div class="numbertext">PIC 2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">CHÚNG TA LÀ BẠN</div>
+</div>
+
+<div class="WebSlides fade">
+  <div class="numbertext">PIC 3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">MÃI KHÔNG QUÊN NHAU</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("WebSlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
