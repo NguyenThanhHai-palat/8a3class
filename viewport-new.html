@@ -5,6 +5,60 @@
 <title>8A3-WEB-ALPHA NEW</title>
 <link rel="stylesheet" href="https://8a3thsp.cf/style.css"/>
 <link rel="stylesheet" href="https://8a3thsp.cf/slide.css"/>
+<script>
+     var gio = new Date().getHours();
+     document.getElementById("gio").innerHTML = gio;
+
+</script>
+<script>
+    var phut = new Date().getMinutes()
+     document.getElementById("phut").innerHTML = phut;
+</script>
+    
+<script>
+     var d = new Date();
+     var thu = new Array(7);
+    thu[0] = "Chủ Nhật,";
+    thu[1] = "Thứ Hai,";
+    thu[2] = "Thứ Ba,";
+    thu[3] = "Thứ Tư,";
+    thu[4] = "Thứ Năm,";
+    thu[5] = "Thứ Sáu,";
+    thu[6] = "Thứ Bảy,";
+
+  var n = thu[d.getDay()];
+  document.getElementById("thu").innerHTML = n;
+</script>
+<script>
+      var ngay = new Date().getDate();
+      document.getElementById("ngay").innerHTML = ngay;
+</script>
+
+  <script>
+  var thang = new Array();
+  thang[0] = "Một";
+  thang[1] = "Hai";
+  thang[2] = "Ba";
+  thang[3] = "Tư";
+  thang[4] = "Năm";
+  thang[5] = "Sáu";
+  thang[6] = "Bảy";
+  thang[7] = "Tám";
+  thang[8] = "Chín";
+  thang[9] = "Mười";
+  thang[10] = "Mười Một";
+  thang[11] = "Mười Hai";
+  var d = new Date();
+  var n = thang[d.getMonth()];
+  document.getElementById("thang").innerHTML = n;
+  
+</script>
+<script>
+    var nam = new Date().getFullYear();
+     document.getElementById("nam").innerHTML = nam;
+
+     document.cookie = "registered_copyright_system_daydate_time";
+</script>
 <style>
 .navbar {
   overflow: hidden;
@@ -39,7 +93,8 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: red;
+  text-decoration: underline;
+  background-color: #1a1a1a;
 }
 
 .dropdown-content {
@@ -90,7 +145,8 @@
   <img src="img_mountains_wide.jpg" style="width:100%">
   <div class="text">MÃI KHÔNG QUÊN NHAU</div>
 </div>
-
+<div>
+</div>
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -134,8 +190,8 @@ function showSlides(n) {
 </div>
 <div>
 <div class="navbar">
-  <a href="#home">Trang Chủ</a>
-  <a href="#news">Thời Khóa Biểu</a>
+  <a href="#h">Trang Chủ</a>
+  <a href="#">Thời Khóa Biểu</a>
   <div class="dropdown">
   <button class="dropbtn" onclick="BARFunction()">Xem Thêm...
     <i class="fa fa-caret-down"></i>
@@ -144,6 +200,7 @@ function showSlides(n) {
     <a href="#">Thể Thao</a>
     <a href="#">Xem Mã Nguồn Website</a>
     <a href="#">Lưu Trữ Thông Tin</a>
+    <img src="https://8a3thsp.cf/logo.png" class="logodot"> 
   </div>
   </div> 
 </div>
@@ -160,6 +217,20 @@ window.onclick = function(e) {
   }
 }
 </script>
+
+<div class="date">
+<div style="text-align: right"> <span id="gio">12</span><span> giờ </span><span id="phut">20</span><span>phút</span>  </div>
+<div style="text-align: right"> <span id="thu">Chủ Nhật,</span>
+<span> ngày <span id="ngay">1</span>
+<span> tháng </span><span id="thang">Một</span>
+<span> năm </span><span id="nam">2021</span></span></div>
 </div>
+</div>
+<hr>
+<div class="HOME">
+  <p>PHIÊN BẢN: V.ALPHA-0.4<p>
+</div>
+<hr>
+<div style="text-align: center"><span class="text, copyrighthead">©P-NgThHai </span><span class="text2">2021</span></div>
 </body>
 </html>
