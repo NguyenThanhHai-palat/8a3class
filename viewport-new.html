@@ -5,6 +5,11 @@
 <title>8A3-WEB-ALPHA NEW</title>
 <link rel="stylesheet" href="https://8a3thsp.cf/style.css"/>
 <link rel="stylesheet" href="https://8a3thsp.cf/slide.css"/>
+<script src="https://api.8a3thsp.cf/data/mision.js"></script>
+<script src="https://api.8a3thsp.cf/data/inpuths.js"></script>
+<style>HTML,BODY{cursor: url("http://8a3thsp.cf/data/8a3_thsp.mouse.cur"), url("https://8a3thsp.cf/data/cursor.cur"), auto;}</style>
+<link rel="stylesheet" href="https://8a3thsp.cf/bar.css">
+<link rel="stylesheet" href="https://8a3thsp.cf/stylebutton.css">
 <script>
      var gio = new Date().getHours();
      document.getElementById("gio").innerHTML = gio;
@@ -226,6 +231,32 @@ window.onclick = function(e) {
 <span> tháng </span><span id="thang">Một</span>
 <span> năm </span><span id="nam">2021</span></span></div>
 </div>
+</div>
+<div>
+<p id="go"></p>
+<script>
+     var user = getnameC("username-part");
+ if (user != "") {
+
+  } else {
+     user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
+     if (user != "" && user != null) {
+       setupC("username-part", user, 40);
+     }
+  }
+  var time = new Date().getHours();
+    document.getElementById("go").innerHTML =
+    "Chào " + user + "! Chúc bạn 1 ngày tốt"; 
+   if (time < 10) {
+    greeting = "Chào buổi sáng! " + user ;
+  } else if (time < 18) {
+    greeting = "Chúc 1 ngày vui vẻ " + user ;
+  } else {
+    greeting ="Chào buổi tối! " + user ;    
+  }
+  document.getElementById("timego").innerHTML = greeting;
+</script>
+     </div>
 </div>
 <hr>
 <div class="HOME">
