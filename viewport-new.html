@@ -204,7 +204,7 @@ function showSlides(n) {
   <div class="dropdown-content" id="Dropdown">
     <a href="#" style="cursor: url(http://8a3thsp.cf/data/openurl.cur),auto;">Thể Thao</a>
     <a href="#" style="cursor: url(http://8a3thsp.cf/data/openurl.cur),auto;">Xem Mã Nguồn Website</a>
-    <a href="#" style="cursor: url(http://8a3thsp.cf/data/openurl.cur),auto;">Lưu Trữ Thông Tin</a>
+    <a href="#" style="cursor: url(http://8a3thsp.cf/data/openurl.cur),auto;">Thông Tin Giáo Viên</a>
    
   </div>
   </div> 
@@ -232,7 +232,7 @@ window.onclick = function(e) {
 </div>
 </div>
 <div>
-<p id="go"></p>
+<p id="dev"></p><p id="timego"></p>
 <script>
      var user = getnameC("username-part");
  if (user != "") {
@@ -240,12 +240,11 @@ window.onclick = function(e) {
   } else {
      user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
      if (user != "" && user != null) {
-       setupC("username-part", user, 40);
+       setupC("username-part", user, 41);
      }
+     
   }
-  var time = new Date().getHours();
-    document.getElementById("go").innerHTML =
-    "Chào " + user + "! Chúc bạn 1 ngày tốt"; 
+  var time = new Date().getHours(); 
    if (time < 10) {
     greeting = "Chào buổi sáng! " + user ;
   } else if (time < 18) {
@@ -254,12 +253,28 @@ window.onclick = function(e) {
     greeting ="Chào buổi tối! " + user ;    
   }
   document.getElementById("timego").innerHTML = greeting;
+
+if (user === "Phạm Quốc Việt", "P.Q.Việt", "Việt") {
+  document.getElementById("dev").innerHTML = "Chào lớp trưởng";
+} 
+if (user === "Dương Nhật Hằng", "D.N.Hằng", "Hằng") {
+  document.getElementById("dev").innerHTML = "Chào lớp phó";
+} 
+if (user === "Phạm Bùi Đức Anh", "P.B.Đ.Anh", "Đức Anh") {
+  document.getElementById("dev").innerHTML = "Chào nhà phát triển";
+} 
+if (user === "Nguyễn Thanh Hải", "Admin", "admin", "Palat_G", "NgThHải") {
+  document.getElementById("dev").innerHTML = "Chào nhà phát triển";
+} 
+if (user === "Trần Hoàng Tuấn", "T.H.Tuấn", "Tuấn") {
+  document.getElementById("dev").innerHTML = "Chào nhà phát triển";
+} 
 </script>
-     </div>
-</div>
+ </div>
 <hr>
 <div class="HOME">
-  <p>PHIÊN BẢN: V32SAS-EWCES-342DF-3WWWW-WFG4<p>
+  <p>PHIÊN BẢN: V32SAS-EADA-3F32-WFG4<p>
+  <h3> PHẦN HIỂN THỊ Ở ĐÂY</h3>
 </div>
 <hr>
 <div style="text-align: center"><span class="text, copyrighthead">©P-NgThHai </span><span class="text2">2021</span></div>
