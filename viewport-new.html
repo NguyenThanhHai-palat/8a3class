@@ -3,13 +3,17 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>8A3-WEB-ALPHA NEW</title>
-<script src="/cdn-cgi/apps/head/wEyISwPisCMYcgnexe3UXkYEigM.js"></script><link rel="stylesheet" href="https://8a3thsp.cf/style.css"/>
+<script src="/cdn-cgi/apps/head/wEyISwPisCMYcgnexe3UXkYEigM.js"></script><script src="/cdn-cgi/apps/head/wEyISwPisCMYcgnexe3UXkYEigM.js"></script><link rel="stylesheet" href="https://8a3thsp.cf/style.css"/>
 <link rel="stylesheet" href="https://8a3thsp.cf/slide.css"/>
 <script src="https://api.8a3thsp.cf/data/mision.js"></script>
 <script src="https://api.8a3thsp.cf/data/inpuths.js"></script>
 <style>HTML,BODY{cursor: url("http://8a3thsp.cf/data/8a3_thsp.mouse.cur"), url("https://8a3thsp.cf/data/cursor.cur"), auto;}</style>
 <link rel="stylesheet" href="https://8a3thsp.cf/bar.css">
 <link rel="stylesheet" href="https://8a3thsp.cf/stylebutton.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
      var gio = new Date().getHours();
      document.getElementById("gio").innerHTML = gio;
@@ -127,6 +131,27 @@
 .show {
   display: block;
 }
+
+#alertBox {
+    position:relative;
+    width:300px;
+    min-height:100px;
+    margin-top:50px;
+    border:1px solid #666;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    background-position:20px 30px;
+}
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:10000;
+    background-image:url(tp.png);
+}
 </style>
 </head>
 <body>
@@ -232,7 +257,7 @@ window.onclick = function(e) {
 </div>
 </div>
 <div>
-<p id="dev"></p><p id="QTV"></p><p id="timego"></p>
+<p id="uidws"></p><p id="dev"></p><p id="QTV"></p><p id="timego"></p>
 <script>
      var user = getnameC("username-part");
  if (user != "") {
@@ -256,27 +281,23 @@ window.onclick = function(e) {
 
 if (user === "Phạm Quốc Việt", "P.Q.Việt", "Việt") {
   document.getElementById("dev").innerHTML = "Chào lớp trưởng";
+
 } 
 if (user === "Dương Nhật Hằng", "D.N.Hằng", "Hằng") {
   document.getElementById("dev").innerHTML = "Chào lớp phó";
+
 } 
-if (user === "Phạm Bùi Đức Anh", "P.B.Đ.Anh", "Đức Anh") {
+if (user != null) {
+  document.getElementById("dev").innerHTML = "";
+
+} 
+if (user === "Nguyễn Thanh Hải", "Admin", "admin", "Palat_G", "NgThHải", "Trần Hoàng Tuấn", "T.H.Tuấn", "Tuấn","Phạm Bùi Đức Anh", "P.B.Đ.Anh", "Đức Anh") {
   document.getElementById("dev").innerHTML = "Chào nhà phát triển";
   var str = "EDIT";
   var result = str.link("https://github.com/NguyenThanhHai-palat/8a3class");
   document.getElementById("QTV").innerHTML = result;
-} 
-if (user === "Nguyễn Thanh Hải", "Admin", "admin", "Palat_G", "NgThHải") {
-  document.getElementById("dev").innerHTML = "Chào nhà phát triển";
-  var str = "EDIT";
-  var result = str.link("https://github.com/NguyenThanhHai-palat/8a3class");
-  document.getElementById("QTV").innerHTML = result;
-} 
-if (user === "Trần Hoàng Tuấn", "T.H.Tuấn", "Tuấn") {
-  document.getElementById("dev").innerHTML = "Chào nhà phát triển";
-  var str = "EDIT";
-  var result = str.link("https://github.com/NguyenThanhHai-palat/8a3class");
-  document.getElementById("QTV").innerHTML = result;
+  uid = "032-881-901"
+  document.getElementById("uidws").innerHTML = "UID: " + uid;
 } 
 </script>
  </div>
@@ -286,7 +307,7 @@ if (user === "Trần Hoàng Tuấn", "T.H.Tuấn", "Tuấn") {
   <h3> PHẦN HIỂN THỊ Ở ĐÂY</h3>
 </div>
 <hr>
-
+<p id="uidws"></p>
 <div style="text-align: center"><script>
 var yea = new Date().getFullYear();
 document.getElementById("yea").innerHTML = cps;</script><span class="text, copyrighthead">©P-NgThHai </span><span class="text2" id="cps">2021</span></div>
