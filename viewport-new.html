@@ -10,10 +10,6 @@
 <style>HTML,BODY{cursor: url("http://8a3thsp.cf/data/8a3_thsp.mouse.cur"), url("https://8a3thsp.cf/data/cursor.cur"), auto;}</style>
 <link rel="stylesheet" href="https://8a3thsp.cf/bar.css">
 <link rel="stylesheet" href="https://8a3thsp.cf/stylebutton.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
      var gio = new Date().getHours();
      document.getElementById("gio").innerHTML = gio;
@@ -257,7 +253,7 @@ window.onclick = function(e) {
 </div>
 </div>
 <div>
-<p id="uidws"></p><p id="dev"></p><p id="QTV"></p><p id="timego"></p>
+<p id="dev"></p><p id="QTV"></p><p id="timego"></p>
 <script>
      var user = getnameC("username-part");
  if (user != "") {
@@ -279,24 +275,25 @@ window.onclick = function(e) {
   }
   document.getElementById("timego").innerHTML = greeting;
 
-if (user === "Phạm Quốc Việt", "P.Q.Việt", "Việt", "Pham Quoc Viet") {
+if (user === "Phạm Quốc Việt") {
   document.getElementById("dev").innerHTML = "Chào lớp trưởng";
-
 } 
-if (user === "Dương Nhật Hằng", "D.N.Hằng", "Hằng", "Duong Nhat Hang") {
+if (user === "Dương Nhật Hằng") {
   document.getElementById("dev").innerHTML = "Chào lớp phó";
-
 } 
-if (user != null) {
-  document.getElementById("dev").innerHTML = "";
-
-} 
-if (user === "Nguyễn Thanh Hải", "Admin", "admin", "Palat_G", "NgThHải", "Trần Hoàng Tuấn", "T.H.Tuấn", "Tuấn","Phạm Bùi Đức Anh", "P.B.Đ.Anh", "Đức Anh", "Duc Anh", "Hoang Tuan") {
-  document.getElementById("dev").innerHTML = "Chào nhà phát triển";
-  var str = "EDIT";
+if (user === "Nguyễn Thanh Hải") {
+  document.getElementById("dev").innerHTML = "Chào LTV";
+}
+if (user === "DEVWEBCONNECT") {
+   var str = "EDIT";
   var result = str.link("https://github.com/NguyenThanhHai-palat/8a3class");
   document.getElementById("QTV").innerHTML = result;
+}
+else {
+  document.getElementById("dev").innerHTML = "Chào bạn";
+}
 </script>
+
  </div>
 <hr>
 <div class="HOME">
