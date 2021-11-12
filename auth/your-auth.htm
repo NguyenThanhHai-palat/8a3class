@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="https://api.8a3thsp.cf/data/mision.js"></script>
+<link rel="shortcut icon" href="/logo.png">
+<style>
+span.tps {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+	}
+    </style>
+</head>
+<body>
+<p style="text-align: center"><img src="https://w.ladicdn.com/610fcaf8a32f5900128c41f3/defaultaccounttile-20211028120255.png" alt="Sakura" width="20%"/></p>
+<h1></h1>
+<div style="text-align: center">
+<p id="dev"></p><span>Tên: </span><span class="tps" id="timego"></span><br>
+<span>ID:</span>
+<script>
+     var user = getnameC("username-part");
+ if (user != "") {
+
+  } else {
+     user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
+     if (user != "" && user != null) {
+       setupC("username-part", user, 41);
+     }
+     
+  }
+  var time = new Date().getHours(); 
+   if (time < 10) {
+    greeting = "" + user ;
+  } else if (time < 18) {
+    greeting = "" + user ;
+  } else {
+    greeting ="" + user ;    
+  }
+  document.getElementById("timego").innerHTML = greeting;
+
+if (user === "Phạm Quốc Việt") {
+  document.getElementById("dev").innerHTML = "Chào lớp trưởng";
+} 
+if (user === "Dương Nhật Hằng") {
+  document.getElementById("dev").innerHTML = "Chào lớp phó";
+} 
+if (user === "Nguyễn Thanh Hải") {
+  document.getElementById("dev").innerHTML = "Chào LTV";
+}
+if (user === "Phạm Bùi Đức Anh") {
+  document.getElementById("dev").innerHTML = "Chào LTV";
+}
+if (user === "Trần Hoàng Tuấn") {
+  document.getElementById("dev").innerHTML = "Chào =]]";
+}
+if (user === "DEVWEBCONNECT") {
+   var str = "EDIT";
+  var result = str.link("https://github.com/NguyenThanhHai-palat/8a3class");
+  document.getElementById("QTV").innerHTML = result;
+}
+</script>
+ </div>
+</body>
+</html>
