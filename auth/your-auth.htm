@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title id="user"></title>
 <script src="https://api.8a3thsp.cf/data/mision.js"></script>
 <link rel="shortcut icon" href="/logo.png">
 <style>
@@ -18,14 +18,14 @@ span.tps {
 <h1></h1>
 <div style="text-align: center">
 <p id="dev"></p><span>Tên: </span><span class="tps" id="timego"></span><br>
-<span>ID:</span>
+<span>ID:</span><span id="ida"></span><br><span>Số điện thoại: </span><span id="sdt"></span>
 <script>
      var user = getnameC("username-part");
  if (user != "") {
 
   } else {
      user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
-     if (user != "" && user != null) {
+     if (user != "" && user != null){
        setupC("username-part", user, 41);
      }
      
@@ -38,28 +38,48 @@ span.tps {
   } else {
     greeting ="" + user ;    
   }
-  document.getElementById("timego").innerHTML = greeting;
+  document.getElementById("timego", "title").innerHTML = greeting;
 
 if (user === "Phạm Quốc Việt") {
   document.getElementById("dev").innerHTML = "Chào lớp trưởng";
+  document.getElementById("ida").innerHTML = "991-418-LT0";
 } 
 if (user === "Dương Nhật Hằng") {
   document.getElementById("dev").innerHTML = "Chào lớp phó";
+  document.getElementById("ida").innerHTML = "981-712-FW1";
 } 
 if (user === "Nguyễn Thanh Hải") {
   document.getElementById("dev").innerHTML = "Chào LTV";
+  document.getElementById("ida").innerHTML = "041-292-A1D";
 }
 if (user === "Phạm Bùi Đức Anh") {
   document.getElementById("dev").innerHTML = "Chào LTV";
+  document.getElementById("ida").innerHTML = "681-204-A1P";
+}
+if (user === "Bùi Minh Hoàng") {
+  document.getElementById("dev").innerHTML = "Chào" + user;
+  document.getElementById("ida").innerHTML = "819-130-BM7";
+}
+if (user === "Trần Thiên Long") {
+  document.getElementById("dev").innerHTML = "Chào" + user;
+  document.getElementById("ida").innerHTML = "819-224-TT1";
+}
+if (user === "Phạm Nguyễn Minh Kha") {
+  document.getElementById("dev").innerHTML = "Chào" + user;
+  document.getElementById("ida").innerHTML = "819-186-PM4";
 }
 if (user === "Trần Hoàng Tuấn") {
-  document.getElementById("dev").innerHTML = "Chào =]]";
+  document.getElementById("dev").innerHTML = "Chào cựu lớp phó";
+  document.getElementById("ida").innerHTML = "000-982-A8D";
 }
 if (user === "DEVWEBCONNECT") {
    var str = "EDIT";
   var result = str.link("https://github.com/NguyenThanhHai-palat/8a3class");
   document.getElementById("QTV").innerHTML = result;
 }
+ if (user != ""){
+ document.getElementById("ida").innerHTML = "VUI LÒNG NHẬP ĐÚNG HỌ TÊN CỦA BẠN VD: Nguyễn Văn A"
+ }
 </script>
  </div>
 </body>
