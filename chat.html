@@ -1,73 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Nhắn tin</title>
-<script src="/cdn-cgi/apps/head/jo5gOr3p3EwLB4RCJWLX63sZygQ.js"></script><style> 
-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
 
-</style>
-<style> 
-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 3px solid #ccc;
-  -webkit-transition: 1.5s;
-  transition: 0.5s;
-  outline: none;
-}
+	<title>Chat</title>
 
-input:focus {
-  border: 3px solid #555;
-}
-</style>
+	<script src="https://8a3thsp.cf/data/a.js"></script>
+	<script src="https://8a3thsp.cf/data/b.js"></script>
+	<script src="https://8a3thsp.cf/data/c.js"></script>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='https://8a3thsp.cf/data/gobal.css'>
+	<link rel='stylesheet' href='https://8a3thsp.cf/data/bundle.css'>
+
+	<script defer src='https://8a3thsp.cf/data/d.js'></script>
 </head>
 <body>
-
-<div>
-<div><input id=input placeholder="Nhắn Vào Đây" /></div>
-<hr>
-<div id=box></div>
-    <p>
-      đầu ra⬆
-    </p>
-<script src=https://api.8a3thsp.cf/data/pubnub.4.28.2.min.js></script>
-<script> (function() {
-        var pubnub = new PubNub({
-            publishKey: 'demo',
-            subscribeKey: 'demo'
-        });
-        function $(id) {
-            return document.getElementById(id);
-        }
-        var box = $('box'),
-            name = $('name')
-            input = $('input'),
-            channel = '10chat-chatbox';
-        pubnub.addListener({
-            message: function(obj) {
-                box.innerHTML = ('' + obj.message).replace(/[<>]/g, '') + '<br>' + box.innerHTML 
-            }
-        });
-        pubnub.subscribe({
-            channels: [channel]
-        });
-        input.addEventListener('keyup', function(e) {
-            if ((e.keyCode || e.charCode) === 13) {
-                pubnub.publish({
-                    channel: channel,
-                    message: input.value,
-                    x: (input.value = '')
-                });
-            }
-        });
-    })();
-</script>
-</div>
-  </body>
+</body>
+</html>
