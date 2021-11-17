@@ -37,7 +37,7 @@ input:focus {
     <p>
       đầu ra⬆
     </p>
-<script src=https://api.8a3thsp.cf/data/pubnub.4.28.2.min.js></script>
+<script src=https://api.8a3thsp.cf/data/chat-data/pubnub.4.28.2.min.js></script>
 <script> (function() {
         var pubnub = new PubNub({
             publishKey: 'demo',
