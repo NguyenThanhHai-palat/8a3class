@@ -9,7 +9,9 @@ TRANG WEB TẠO TRÊN CÔNG CỦA THẰNG TẠO RA CÁI CONTENT NÀY CỦA GITHU
 
 LTV: NGTHHAI-PALAT
 LTV-TEST: P.B.ĐANH
-BUILD TOOL: GITHUB-![8A3 BUILD-HTML](https://build.8a3thsp.cf)       
+BUILD TOOL: GITHUB
+
+[8A3 BUILD-HTML](https://build.8a3thsp.cf)       
 
 
 
