@@ -1,5 +1,5 @@
 # 8a3 CLASS-WEBSITE
-![PALAT-DEV logo](https://8a3thsp.cf/data/palat-dev.png "PALAT-DEV logo")
+(https://8a3thsp.cf/data/palat-dev.png "GDevelop logo")
 
 
 
