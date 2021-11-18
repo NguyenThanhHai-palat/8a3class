@@ -1,5 +1,5 @@
 # 8a3 CLASS-WEBSITE
-![GDevelop logo](https://8a3thsp.cf/data/palat-dev.png)
+!(https://8a3thsp.cf/data/palat-dev.png)
 
 
 
