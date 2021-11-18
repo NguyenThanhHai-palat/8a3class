@@ -1,5 +1,5 @@
 # 8a3 CLASS-WEBSITE
-﻿![alt text](https://8a3thsp.cf/data/palat-dev.png "RetroBar")
+﻿![alt text](https://github.com/NguyenThanhHai-palat/8a3class/raw/main/data/palat-dev.png "RetroBar")
 
 
 
