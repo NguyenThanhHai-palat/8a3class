@@ -81,6 +81,15 @@ if (user === "DEVWEBCONNECT") {
  
  }
 </script>
+	<br>
+<button onclick="my()">ĐĂNG XUẤT</button>
+<script>
+function my() {
+  document.cookie = "username-part=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  location.reload(); 
+}
+
+</script>
  </div>
 </body>
 </html>
