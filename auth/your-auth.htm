@@ -3,15 +3,28 @@
 <head>
 <title id="user">auth.js</title>
 <script src="https://api.8a3thsp.cf/data/mision.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="shortcut icon" href="/logo.png">
 <style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 4px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
 span.tps {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     margin: 0;
 	}
-    </style>
+</style>
 </head>
 <body oncontextmenu=”return false” ondragstart=”return false” onselectstart=”return false”>
 <p style="text-align: center"><img src="https://w.ladicdn.com/610fcaf8a32f5900128c41f3/defaultaccounttile-20211028120255.png" alt="Sakura" width="20%"/></p>
@@ -134,7 +147,9 @@ if (user === "DEVWEBCONNECT") {
  }
 </script>
 	<br>
-<button onclick="my()">ĐĂNG XUẤT</button>
+<button onclick="my()" class="btn btn-primary">ĐĂNG XUẤT</button>
+<br>
+<a href="https://8a3thsp.cf/auth/edit.htm">CHỈNH SỬA THÔNG TIN CÁ NHÂN</a>
 <script>
 function my() {
   document.cookie = "username-part=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
