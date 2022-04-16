@@ -24,6 +24,7 @@
         <a href="/vn/more.html" id="lk3">Thêm..</a>
       </div>
       <div>
+        <span>CHÀO </span><span id="timego"></span><span id="profile.getName()"></span>
         <hr>
         <h2>EDU OUTLINE Tải Xuống</h2>
         <a href="https://dow.8a3thsp.cf/dow/kqxo2081uxf2gbs/eduoutline.apk?dl=1">Android</a>
@@ -31,6 +32,26 @@
         <hr>
       </div>
       <div>
+        <p>Đăng Nhập Với Google</p>
+        <a class="g-signin2" data-onsuccess="onSignIn"></a>
+        <a href="#" onclick="signOut();">Sign out</a>
+        <script>
+             function signOut() {
+              var auth2 = gapi.auth2.getAuthInstance();
+               auth2.signOut().then(function () {
+                console.log('User signed out.');
+                  });
+                }
+                function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                  console.log('Name: ' + profile.getName());
+                  console.log('Image URL: ' + profile.getImageUrl());
+                  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+        </script>
+        <p>Đăng Nhập Với ID WEB</p>
+        <a href="https://8a3thsp.cf/auth/your-auth.htm">ĐĂNG NHẬP</a>
         <h3 id="lan12">Phát Triển: NGTHHAI</h3>
         <p id="lan15">Content: 1-14/6/2021</p>
       </div>
