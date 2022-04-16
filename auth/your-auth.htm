@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<title id="user">auth-ver01</title>
+<title id="">auth-ver01</title>
 <script src="https://api.8a3thsp.cf/data/mision.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="shortcut icon" href="/logo.png">
@@ -23,6 +24,7 @@ span.tps {
     font-weight: bold;
     font-size: 24px;
     margin: 0;
+    color: red;
 	}
 </style>
 </head>
@@ -31,132 +33,18 @@ span.tps {
 <h1></h1>
 <div style="text-align: center">
 <p id="dev"></p><span>Tên: </span><span class="tps" id="timego"></span><br>
-<span>ID:</span><span id="ida"></span><br><span>Số điện thoại: </span><span id="sdt"></span>
-<script>
-     var user = getnameC("username-part");
- if (user != "") {
-
-  } else {
-     user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
-     if (user != "" && user != null){
-       setupC("username-part", user, 41);
-     }
-     
-  }
-  var time = new Date().getHours(); 
-   if (time < 10) {
-    greeting = "" + user ;
-  } else if (time < 18) {
-    greeting = "" + user ;
-  } else {
-    greeting ="" + user ;    
-  }
-  document.getElementById("timego", "title").innerHTML = greeting;
-
-if (user === "Phạm Quốc Việt") {
-  document.getElementById("dev").innerHTML = "Chào lớp trưởng";
-  document.getElementById("ida").innerHTML = "ĐÃ KHÓA (LỖI:L5)";
-} 
-if (user === "Dương Nhật Hằng") {
-  document.getElementById("dev").innerHTML = "Chào lớp phó";
-  document.getElementById("ida").innerHTML = "ĐÃ KHÓA (LỖI:L5)";
-} 
-if (user === "Nguyễn Thanh Hải") {
-  document.getElementById("dev").innerHTML = "Chào LTV";
-  document.getElementById("ida").innerHTML = "041-292-A1D-admin1";
-}
-if (user === "Phạm Bùi Đức Anh") {
-  document.getElementById("dev").innerHTML = "Chào LTV";
-  document.getElementById("ida").innerHTML = "353-DJa-092 (KEY-ID)";
-}
-if (user === "Bùi Minh Hoàng") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-130-BM7";
-}
-if (user === "Trần Thiên Long") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-224-TT1";
-}
-if (user === "Phạm Nguyễn Minh Kha") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-Va-940 (KEY-ID)";
-}
-if (user === "Lê Khanh") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-000-LK1";
-}
-if (user === "Chí Thái Tâm Anh") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-133-CA0";
-}
-if (user === "Trà Nguyên") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-233-TN2";
-}
-if (user === "Trần Hữu Hiếu") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-422-TH1";
-}
-if (user === "Trần Xuân Hiếu") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-212-XH4";
-}
-if (user === "Nguyễn Thành Đạt172") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-591-DT2";
-}
-if (user === "Nguyễn Thành Đạt105") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-592-DT1";
-}
-if (user === "Trương Văn Công") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-952-VC1";
-}
-if (user === "Phạm Đức Quân") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-522-DQ1";
-}
-if (user === "Trần Đình Quân") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-321-DQ4";
-}
-if (user === "Đồng Thanh Ngân") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-312-TN2";
-}
-if (user === "Diêm Đình Thịnh") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-285-DT6";
-}
-if (user === "Nguyễn Hải Yến") {
-  document.getElementById("dev").innerHTML = "Chào " + user;
-  document.getElementById("ida").innerHTML = "819-313-HY1";
-}
-if (user === "Trần Hoàng Tuấn") {
-  document.getElementById("dev").innerHTML = "Chào cựu lớp phó";
-  document.getElementById("ida").innerHTML = "000-982-A8D";
-}
-if (user === "DEVWEBCONNECT") {
-   var str = "EDIT";
-  var result = str.link("https://github.com/NguyenThanhHai-palat/8a3class");
-  document.getElementById("QTV").innerHTML = result;
-}
- if (user != ""){
- 
- }
-</script>
+<span>ID:</span><span id="ida"></span><br>
 	<br>
 <button onclick="my()" class="btn btn-primary">ĐĂNG XUẤT</button>
 <br>
-<a href="https://8a3thsp.cf/auth/edit.htm">CHỈNH SỬA THÔNG TIN CÁ NHÂN</a>
 <script>
 function my() {
-  document.cookie = "username-part=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie = "name=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   location.reload(); 
 }
 
 </script>
  </div>
 </body>
+<script src="https://libary-8-a-3-thsp.glitch.me/lpg.js"></script>
 </html>
