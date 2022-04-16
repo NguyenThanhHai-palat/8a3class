@@ -253,25 +253,16 @@ function closeNav() {
 <div>
 
 <script>
-     var user = getnameC("username-part");
+     var user = getnameC("name");
  if (user != "") {
 
   } else {
      user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
      if (user != "" && user != null) {
-       setupC("username-part", user, 41);
+       setupC("name", user, 41);
      }
      
   }
-  var time = new Date().getHours(); 
-   if (time < 10) {
-    greeting = "Chào buổi sáng! " + user ;
-  } else if (time < 18) {
-    greeting = "Chúc 1 ngày vui vẻ " + user ;
-  } else {
-    greeting ="Chào buổi tối! " + user ;    
-  }
-  document.getElementById("timego").innerHTML = greeting;
 
 if (user === "Phạm Quốc Việt") {
   document.getElementById("dev").innerHTML = "Chào lớp trưởng";
