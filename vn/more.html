@@ -45,7 +45,6 @@
         <h3 id="lan12">Phát Triển: NGTHHAI</h3>
         <p id="lan15">Content: 1-14/6/2021</p>
       </div>
-      <span id="timego"></span>
       <script>
         function signOut() {
           var auth2 = gapi.auth2.getAuthInstance();
@@ -56,17 +55,14 @@
         function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
         console.log('ID: ' + profile.getId()); 
-        
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail()); 
-        $(".btn1").click(function(){
-         $("button").hide();
-       });
+        document.write(profile)
 
       }
       </script>
-      <script>document.writeln("GOOGLE NAME:" +profile.getName())</script>
+      <script></script>
       <div class="footer">
         <p>©NGTHHAI</p>
         <div style="text-align: left; font-size: 11px">
