@@ -35,7 +35,7 @@
       <div>
         <p>Đăng Nhập Với Google</p>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="g-signin2" data-onsuccess="onSignIn" id="btn1"></div>
         <button href="#" onclick="signOut();">Đăng Xuất</button>
         <p>Đăng Nhập Với ID WEB</p>
         <a href="https://8a3thsp.cf/auth/your-auth.htm">Đến Trang ID WEB</a>
@@ -55,6 +55,10 @@
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail()); 
+        $(".btn1").click(function(){
+         $("button").hide();
+       });
+
       }
       </script>
       <div class="footer">
