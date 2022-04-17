@@ -34,5 +34,15 @@ if (navigator.language=="vi"){
 if (navigator.language=="ru"){  
   window.location.href = "/rs";}
 </script>
+<script>
+  var delayInMilliseconds = 200;
+  setTimeout(function() {
+    window.open("/vn" ,"_self");
+  }, delayInMilliseconds);
+  var seconds = 0;
+  setInterval(function() {timer.innerHTML = seconds++;
+  console.log(seconds);
+  }, 1000);
+  </script>
 </body>
 </html>
