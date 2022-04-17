@@ -34,25 +34,9 @@
       </div>
       <div>
         <p>Đăng Nhập Với Google</p>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-        <a href="#" onclick="signOut();">Sign out</a>
-        <script>
-             function signOut() {
-              var auth2 = gapi.auth2.getAuthInstance();
-               auth2.signOut().then(function () {
-                console.log('User signed out.');
-                  });
-                }
-                function onSignIn(googleUser) {
-                var profile = googleUser.getBasicProfile();
-                  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-                  console.log('Name: ' + profile.getName());
-                  console.log('Image URL: ' + profile.getImageUrl());
-                  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
-        </script>
+        <a href="#" onclick="signOut();">Đến Trang Đăng Nhập Google</a>
         <p>Đăng Nhập Với ID WEB</p>
-        <a href="https://8a3thsp.cf/auth/your-auth.htm">ĐĂNG NHẬP</a>
+        <a href="https://8a3thsp.cf/auth/your-auth.htm">Đến Trang ID WEB</a>
         <h3 id="lan12">Phát Triển: NGTHHAI</h3>
         <p id="lan15">Content: 1-14/6/2021</p>
       </div>
