@@ -39,6 +39,7 @@
         <p>Đăng Nhập Với Google</p>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <div class="g-signin2" data-onsuccess="onSignIn" id="btn1"></div>
+        <button> Kiểm Tra Tài Khoản Đã Đăng Nhập</button>
         <button href="#" onclick="signOut();">Đăng Xuất</button>
         <p>Đăng Nhập Với ID WEB</p>
         <a href="https://8a3thsp.cf/auth/your-auth.htm">Đến Trang ID WEB</a>
@@ -58,9 +59,9 @@
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail()); 
-        document.write(profile)
+        alert("Tên Tài Khoản: " + profile.getName() "\n" "Gmail: " profile.getEmail());
+}
 
-      }
       </script>
       <script></script>
       <div class="footer">
