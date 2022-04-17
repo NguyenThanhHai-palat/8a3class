@@ -36,8 +36,7 @@ if (navigator.language=="ru"){
 </script>
 <span>thời gian chờ:</span>
 <span id="timer"></span>
-<span>Nếu Website Không Chuyển Hướng Vui Lòng Nhấn Vào Sử Dụng Mặc Định Tiếng Việt</span>
-<a href="/vn">https://8a3thsp.cf/vn</a>
+<span>Nếu Website Không Chuyển Hướng Vui Lòng Chờ Để Chuyển Hướng Mặc Định Tiếng Việt</span>
 <script>
   var delayInMilliseconds = 5000;
   setTimeout(function() {
@@ -46,7 +45,9 @@ if (navigator.language=="ru"){
   var seconds = 0;
   setInterval(function() {timer.innerHTML = seconds++;
   console.log(seconds);
+  
   }, 1000);
+  console.log("AFTER 5S WEB WILL GO TO /VN");
   </script>
 </body>
 </html>
