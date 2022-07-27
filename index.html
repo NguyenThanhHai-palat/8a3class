@@ -18,6 +18,36 @@
 </head>
 <body>
   <h1>KẾT THÚC ... LỚP 8 CẢM ƠN ĐÃ CÙNG CHÚNG TÔI HẾT NĂM HỌC NÀY</h1>
-  <h2> CHỦ TRANG WEB VÀ 2 THÀNH VIÊN PHÁT TRIỂN XIN CẢM ƠN NHỮNG NGƯỜI ĐÃ GÓP Ý, SỬ DỤNG PHÁT TRIỂN DỊCH VỤ CỦA TRANG WEB NÀY! HẸN GẶP LẠI VÀO NĂM SAU</h2>
+  <script>
+if (navigator.language=="en"){
+    window.location.href = "/en";}
+</script>
+<script>
+ if (navigator.language=="ja"){
+  window.location.href = "/ja";}
+</script>
+
+<script>
+if (navigator.language=="vi"){  
+  window.location.href = "/vn";}
+</script>
+<script>
+if (navigator.language=="ru"){  
+  window.location.href = "/rs";}
+</script>
+<p>thời gian chờ:</p>
+<p id="timer"></p>
+<p>Nếu Website Không Chuyển Hướng Vui Lòng Chờ Để Chuyển Hướng Mặc Định Tiếng Việt</p>
+<script>
+  var delayInMilliseconds = 5000;
+  setTimeout(function() {
+    window.open("/vn" ,"_self");
+  }, delayInMilliseconds);
+  var seconds = 0;
+  setInterval(function() {timer.innerHTML = seconds++;
+  console.log(seconds);
+  }, 1000);
+  console.log("AFTER 5S WEB WILL GO TO /VN");
+  </script>
 </body>
 </html>
